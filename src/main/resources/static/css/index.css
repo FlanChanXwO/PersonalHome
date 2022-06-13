@@ -302,7 +302,7 @@ aside_content .card-info .author-info__description {
         width: 100% !important;
     }
     #aside_content{
-        width: 50% !important;
+        width: 100% !important;
     }
     .layout_page {
         -webkit-box-orient: vertical;
