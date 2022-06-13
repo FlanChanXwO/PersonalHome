@@ -152,10 +152,10 @@
                         </div>
                         <div class="skillbar">
                             <div class="skillbar-title"
-                                 style="background: linear-gradient(to right, #00BCD4 0%, #f54009 100%); width: 40%">
+                                 style="background: linear-gradient(to right, #00BCD4 0%, #f54009 100%); width: 70%">
                                 <span>SpringBoot</span>
                             </div>
-                            <div class="skill-bar-percent">40%</div>
+                            <div class="skill-bar-percent">70%</div>
                         </div>
                         <div class="skillbar">
                             <div class="skillbar-title"
@@ -166,24 +166,24 @@
                         </div>
                         <div class="skillbar">
                             <div class="skillbar-title"
-                                 style="background: linear-gradient(to right, #3be2ff 0%, #0e5d6b 100%); width: 25%">
+                                 style="background: linear-gradient(to right, #3be2ff 0%, #0e5d6b 100%); width: 35%">
                                 <span>中间件</span>
                             </div>
-                            <div class="skill-bar-percent">25%</div>
+                            <div class="skill-bar-percent">35%</div>
                         </div>
                     </div>
 
-                    <hr>
-                    <h2>我的其他相关网站</h2>
-                    <div class="tool">
-                        <a href="https://blog.csdn.net/qq_55898300" target="_blank">CSDN</a><br>
-                    </div>
+<!--                    <hr>-->
+<!--                    <h2>我的其他相关网站</h2>-->
+<!--                    <div class="tool">-->
+<!--                        <a href="https://blog.csdn.net/qq_55898300" target="_blank">CSDN</a><br>-->
+<!--                    </div>-->
 
-                    <hr>
-                    <h2>我的最新项目</h2>
-                    <div class="tool">
-                        <a href="https://github.com/FlanChanXwO/BookManaSystem" target="_blank">图书管理系统</a>
-                    </div>
+<!--                    <hr>-->
+<!--                    <h2>我的最新项目</h2>-->
+<!--                    <div class="tool">-->
+<!--                        <a href="https://github.com/FlanChanXwO/BookManaSystem" target="_blank">图书管理系统</a>-->
+<!--                    </div>-->
                 </div>
             </article>
         </div>
@@ -194,6 +194,7 @@
         </div>
     </footer>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.js"></script>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -209,7 +210,6 @@
 
 <!--鼠标点击效果-->
 <script src="./js/jquery-2.0.0.min.js"></script>
-<script src="./js/fireworks-mouse-effects.js"></script>
 
 <!-- nplayer -->
 <script src="https://unpkg.com/nplayer@latest/dist/index.min.js"></script>
@@ -220,59 +220,13 @@
 <!-- 看板娘 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
 <script src="https://cdn.jsdelivr.net/gh/FlanChanXwO/live2d-widget@latest/autoload.js"></script>
+
+
 <script type="text/javascript">
-    //防止将html代码另存下载
-    $(function () {
-        var e = window.event || arguments[0];
-        if (e.keyCode === 123) {
-            return false;
-        } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode === 73)) {
-            return false;
-        } else if ((e.ctrlKey) && (e.keyCode === 85)) {
-            return false;
-        } else if ((e.ctrlKey) && (e.keyCode === 83)) {
-            return false;
-        }
-        //右键菜单
-        document.oncontextmenu = function (evt) {
-            evt.preventDefault();
-        };
-        document.onselectstart = function (evt) {
-            evt.preventDefault();
-        };
-        //ctrl+s的另存为按键
-        document.addEventListener("keydown", function (e) {
-            if (e.code === 'KeyS' && e.ctrlKey) {
-                e.preventDefault();
-            }
-        });
-
-        //阻止开发工具的使用
-        $(document).keydown(function(e){
-            if(e.key=='F12'){
-                e.preventDefault();
-                window.location.href = '/Forbidden';
-                alert("此网站不允许使用开发者工具！")
-            }
-            if(e.ctrlKey === true && e.shiftKey === true && (e.key === 'i' || e.key === 'I')){
-                e.preventDefault();
-                window.location.href = '/Forbidden';
-                alert("此网站不允许使用开发者工具！")
-            }
-        })
-
-
-
-
-
-    });
-
-
     console.clear();
     console.log("%c 有朋自远方来, 不亦乐乎.", "background:#24272A; color:#ffffff", "");
     console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/FlanChanXwO");
     console.log("%c 版本号: %c", "background:#24272A; color:#ffffff", "", "1.0.0");
-
 
     (function ($) {
         $.fn.snow = function (options) {
